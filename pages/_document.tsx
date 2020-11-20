@@ -1,41 +1,26 @@
+import { ServerStyleSheets } from '@material-ui/core/styles';
+import Document, { Head, Html, Main, NextScript } from 'next/document';
 import React from 'react';
-import Document, {
-  Head,
-  Main,
-  NextScript,
-  DocumentInitialProps,
-} from 'next/document';
-import { ServerStyleSheets } from '@material-ui/styles';
-
-// Copied from 'next-server/lib/utils'
-type RenderPageResult = {
-  html: string;
-  head?: Array<JSX.Element | null>;
-  dataOnly?: true;
-};
 
 class MyDocument extends Document {
-  render(): React.ReactElement {
+  render() {
     return (
-      <html lang="en">
-      <Head>
-        <meta charSet="utf-8"/>
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
-        />
-        <link rel="shortcut icon" href="/favicon.png"/>
-      </Head>
-      <body>
-      <Main/>
-      <NextScript/>
-      </body>
-      </html>
+      <Html lang="en">
+        <Head>
+          <title />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
     );
   }
 }
 
-MyDocument.getInitialProps = async (ctx): Promise<DocumentInitialProps> => {
+// `getInitialProps` belongs to `_document` (instead of `_app`),
+// it's compatible with server-side generation (SSG).
+MyDocument.getInitialProps = async ctx => {
   // Resolution order
   //
   // On the server:
@@ -62,10 +47,9 @@ MyDocument.getInitialProps = async (ctx): Promise<DocumentInitialProps> => {
   const sheets = new ServerStyleSheets();
   const originalRenderPage = ctx.renderPage;
 
-  ctx.renderPage = (): RenderPageResult | Promise<RenderPageResult> =>
+  ctx.renderPage = () =>
     originalRenderPage({
-      enhanceApp: App => (props): React.ReactElement =>
-        sheets.collect(<App {...props} />),
+      enhanceApp: App => props => sheets.collect(<App {...props} />),
     });
 
   const initialProps = await Document.getInitialProps(ctx);
@@ -73,12 +57,7 @@ MyDocument.getInitialProps = async (ctx): Promise<DocumentInitialProps> => {
   return {
     ...initialProps,
     // Styles fragment is rendered after the app and page rendering finish.
-    styles: [
-      <React.Fragment key="styles">
-        {initialProps.styles}
-        {sheets.getStyleElement()}
-      </React.Fragment>,
-    ],
+    styles: [...React.Children.toArray(initialProps.styles), sheets.getStyleElement()],
   };
 };
 
