@@ -1,13 +1,17 @@
 import CssBaseline from '@material-ui/core/CssBaseline';
+import { MuiThemeProvider } from '@material-ui/core/styles';
 import { AppProps } from 'next/app';
-import React, { Fragment } from 'react';
+import React from 'react';
+
+import '../src/styles/fonts.css';
+import theme from '../src/styles/theme';
 
 const CVApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
-    <Fragment>
+    <MuiThemeProvider theme={theme}>
       <CssBaseline />
       <Component {...pageProps} />
-    </Fragment>
+    </MuiThemeProvider>
   );
 };
 

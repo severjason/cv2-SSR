@@ -1,8 +1,9 @@
-const { locales, defaultLocale } = require('./i18n.json')
+const { locales, defaultLocale } = require('./i18n.json');
+const withImages = require('next-images');
 
-module.exports = {
+module.exports = withImages({
   i18n: {
     locales,
     defaultLocale,
   },
-};
+});

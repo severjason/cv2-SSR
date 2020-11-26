@@ -1,22 +1,9 @@
 import React from 'react';
 import { GetStaticProps, NextPage } from 'next';
-import useTranslation from 'next-translate/useTranslation';
-import Link from 'next/link';
+import App from '../src/components';
 
 const HomePage: NextPage = () => {
-  const { t } = useTranslation();
-  const firstName = t('common:firstName');
-  return (
-    <div>
-      <Link href="/" locale="en">
-        <a>English</a>
-      </Link>
-      <Link href="/" locale="uk">
-        <a>Ukraine</a>
-      </Link>
-      {firstName}
-    </div>
-  );
+  return <App />;
 };
 
 export default HomePage;
