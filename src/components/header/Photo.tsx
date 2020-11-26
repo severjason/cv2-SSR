@@ -37,7 +37,7 @@ const Photo = () => {
         className={classes.avatar}
         component="div"
         src={photo}
-        imgProps={{ loading: 'lazy', title: `${fullName} photo` }}
+        imgProps={{ loading: 'lazy', title: fullName }}
       />
     </Grid>
   );
