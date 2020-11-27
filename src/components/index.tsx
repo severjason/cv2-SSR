@@ -3,9 +3,9 @@ import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
 import React from 'react';
 
-//import Footer from './app/footer';
+import Footer from './footer';
 import Header from './header';
-//import Main from './app/main';
+import Main from './main';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -25,6 +25,8 @@ const App = () => {
   return (
     <Container className={classes.root}>
       <Header />
+      <Main />
+      <Footer />
     </Container>
   );
 };

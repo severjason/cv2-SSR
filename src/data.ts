@@ -359,7 +359,7 @@ export default {
   email: 'severynov.sergii@gmail.com',
   locationLink: 'https://goo.gl/maps/1JsxNBFiDycahTAQ8',
   github: 'https://github.com/severjason',
-  website: 'https://sergii.severynov.com/en',
+  website: 'https://sergii.severynov.com',
   facebook: 'https://www.facebook.com/severjason',
   linkedIn: 'https://www.linkedin.com/in/severjason',
   en,
