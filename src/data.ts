@@ -112,15 +112,19 @@ const en: CVData = {
     {
       startDate: 'August 2018',
       endDate: 'April 2019',
-      company: 'Local Insights',
-      role: COMMON_DATA.en.role,
-      link: 'https://localinsights.io/',
+      company: 'Upwork',
+      role: COMMON_DATA.ua.role,
       location: 'Remote',
+      link: 'https://www.upwork.com/o/profiles/users/_~01fff6263f5fd6f506/',
       list: [
         {
+          title: 'Local Insights',
           text:
             'Adding new features, design update, ' +
             'bug fixing, TTFB improvement, code refactoring of existing application.',
+          /*
+                    link: 'https://localinsights.io/',
+          */
         },
       ],
     },
@@ -147,6 +151,18 @@ const en: CVData = {
       list: [
         {
           text: 'Bug fixing for small hort-term projects.',
+        },
+      ],
+    },
+    {
+      startDate: 'September 2009',
+      endDate: 'May 2018',
+      company: 'JSC Motor Sich',
+      role: 'Foreign trade department engineer',
+      location: COMMON_DATA.en.location,
+      list: [
+        {
+          text: 'Negotiation, execution, signing and support of contracts for the sale of aviation goods and services.',
         },
       ],
     },
@@ -275,7 +291,9 @@ const uk: CVData = {
             ' податкових нарахувань та інше. ' +
             'Я був відповідальний за додавання нових функцій, оновлення дизайну, ' +
             'виправлення багів, рефакторинг коду.',
+          /*
           link: 'https://localinsights.io/',
+*/
         },
       ],
     },
@@ -303,6 +321,19 @@ const uk: CVData = {
       list: [
         {
           text: 'Короткострокові проекти.',
+        },
+      ],
+    },
+    {
+      startDate: 'Вересень 2009',
+      endDate: 'Травень 2018',
+      company: 'АТ "Мотор Січ"',
+      role: 'Інженер зовнішньоторговельного департаменту',
+      location: COMMON_DATA.ua.location,
+      list: [
+        {
+          text:
+            'Проведення переговорів, оформлення, підписання та підтримка контрактів на продаж товарів та послуг авіаційного призначення.',
         },
       ],
     },
