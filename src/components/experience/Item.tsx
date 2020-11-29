@@ -75,26 +75,26 @@ const Item: React.FC<ExperienceItem> = ({ company, endDate, role, startDate, lis
         <Grid container>
           <Typography variant="body2" className={classes.role}>
             {role}
-            <span>{` ${t('common:at')}`}</span>
+            <span>{` ${t('common:at')} `}</span>
+            <span>
+              {link ? (
+                <Link
+                  color="textPrimary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={link}
+                  variant="body2"
+                  underline="always"
+                  className={classes.company}
+                  title={`${t('common:visit')} ${company}`}
+                >
+                  {company}
+                </Link>
+              ) : (
+                <span className={classes.company}>{company}</span>
+              )}
+            </span>
           </Typography>
-          {link ? (
-            <Link
-              color="textPrimary"
-              target="_blank"
-              rel="noopener noreferrer"
-              href={link}
-              variant="body2"
-              underline="always"
-              className={classes.company}
-              title={`${t('common:visit')} ${company}`}
-            >
-              {company}
-            </Link>
-          ) : (
-            <Typography variant="body2" className={classes.company}>
-              {company}
-            </Typography>
-          )}
         </Grid>
         <Grid container>
           <Typography className={classes.location}>
