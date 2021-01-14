@@ -150,7 +150,7 @@ const en: CVData = {
       link: 'https://www.upwork.com/o/profiles/users/_~01fff6263f5fd6f506/',
       list: [
         {
-          text: 'Bug fixing for small hort-term projects.',
+          text: 'Bug fixing for small short-term projects.',
         },
       ],
     },
