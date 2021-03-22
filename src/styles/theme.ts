@@ -1,5 +1,4 @@
 import { createMuiTheme } from '@material-ui/core/styles';
-import color from '@material-ui/core/colors/blueGrey';
 
 const theme = createMuiTheme({
   typography: {
@@ -15,7 +14,12 @@ const theme = createMuiTheme({
     fontFamily: `'Exo 2', Helvetica, sans-serif`,
   },
   palette: {
-    primary: color,
+    primary: {
+      light: '#33877c',
+      main: '#00695c',
+      dark: '#004940',
+      contrastText: '#fff',
+    },
   },
 });
 

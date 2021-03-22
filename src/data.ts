@@ -67,10 +67,10 @@ const en: CVData = {
       //link: 'https://pixelteh.com/',
       list: [
         {
-          text: 'Team lead in COVID-19 related project',
+          text: 'Team lead in COVID-19 related project.',
         },
         {
-          text: 'Project architecture development and application features design for startup',
+          text: 'Project architecture development and application features design for startup.',
         },
         {
           text: 'UI development of blockchain-based system for registering, tracking and clearing debt.',
