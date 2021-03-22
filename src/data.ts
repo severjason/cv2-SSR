@@ -67,6 +67,9 @@ const en: CVData = {
       //link: 'https://pixelteh.com/',
       list: [
         {
+          text: 'Team lead in COVID-19 related project',
+        },
+        {
           text: 'Project architecture development and application features design for startup',
         },
         {
@@ -227,6 +230,9 @@ const uk: CVData = {
       location: COMMON_DATA.ua.location,
       //link: 'https://pixelteh.com/',
       list: [
+        {
+          text: "Тім лід у проекті, пов'язаному з COVID-19.",
+        },
         {
           text: 'Розробка архітектури та планування особливостей стартап-проекту.',
         },
