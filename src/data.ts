@@ -54,18 +54,20 @@ const TECH: { main: SkillListItem[][]; additional: SkillListItem[][] } = {
 
 const en: CVData = {
   profile:
-    'I am Front-End Developer who is able to create all variety of websites and applications ' +
-    ' - from simple landing page to complex server side rendering progressive web application with offline support. ',
+    'I am a senior front end stack developer with multiple years of commercial experience in web development. My preferred technical stack is Typescript and Javascript. I have a deep expertise in writing web applications of different complexity. Being familiar with design patterns, test/domain driven design approaches I always follow the best practices of software development keeping my code clean, clear, scalable and covered with the tests. I have a solid expertise in working with Javascript, ES6+ and TypeScript and have got plenty of projects implemented in Next.js and React. I am familiar with HTML5 and CSS as well as CSS frameworks and pre-processors, which allows building user friendly and responsive UIs. I always use git, familiar with both REST and GraphQL approaches and have a decent experience working with AWS services. I am interested in the development of high load, scalable and complex web applications. My passion is technical implementation and support of complex business needs.',
   location: COMMON_DATA.en.location,
   experience: [
     {
       startDate: 'June 2020',
       endDate: 'present',
       company: 'Elementica',
-      role: COMMON_DATA.en.role,
+      role: 'Team Lead (Frontend)',
       location: COMMON_DATA.en.location,
       //link: 'https://pixelteh.com/',
       list: [
+        {
+          text: 'Team lead in educational start-up.',
+        },
         {
           text: 'Team lead in COVID-19 related project.',
         },
@@ -218,18 +220,28 @@ const en: CVData = {
 
 const uk: CVData = {
   profile:
-    'Я Front-End Розробник, що може створити вебсайти та додатки різноманітної складності' +
-    ' - від простих лендінгів до комплексних PWA додатків з SSR та підтримкою оффлайн. ',
+    'Я старший Frontend розробник з багаторічним комерційним досвідом у веб-розробці. ' +
+    'Моїм улюбленим технічним стеком є Typescript та Javascript. Я маю глибокий досвід у написанні веб-додатків різної складності. ' +
+    'Будучи знайомим із шаблонами проектування, підходами до тестування / керування доменами, ' +
+    'я завжди дотримуюсь найкращих практик розробки програмного забезпечення, зберігаючи мій код чистим, зрозумілим, масштабованим та охопленим тестами. ' +
+    'Я маю великий досвід роботи з Javascript, ES6 + та TypeScript, і у мене є безліч проектів, реалізованих у Next.js та React. ' +
+    'Я знайомий з HTML5 і CSS, а також фреймворками та попередніми процесорами CSS, що дозволяє створювати зручні інтерфейси. ' +
+    'Я завжди використовую git, знайомий як з REST, так і з GraphQL і маю пристойний досвід роботи зі службами AWS. ' +
+    'Я зацікавлений у розробці веб-додатків із високим навантаженням та масштабованості. ' +
+    'Моїм захопленням є технічна реалізація та підтримка складних бізнес-потреб.',
   location: COMMON_DATA.ua.location,
   experience: [
     {
       startDate: 'Липень 2020',
       endDate: 'теп. час',
       company: 'Elementica',
-      role: COMMON_DATA.ua.role,
+      role: 'Тім лід (Frontend)',
       location: COMMON_DATA.ua.location,
       //link: 'https://pixelteh.com/',
       list: [
+        {
+          text: 'Тім лід у освітньому стартапі.',
+        },
         {
           text: "Тім лід у проекті, пов'язаному з COVID-19.",
         },
