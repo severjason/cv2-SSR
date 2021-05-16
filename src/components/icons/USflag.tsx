@@ -1,7 +1,7 @@
 import SvgIcon from '@material-ui/core/SvgIcon';
 import React from 'react';
 
-export default () => (
+const USFlag = () => (
   <SvgIcon viewBox="0 0 640 480">
     <g fillRule="evenodd">
       <g strokeWidth="1pt">
@@ -25,3 +25,5 @@ export default () => (
     </g>
   </SvgIcon>
 );
+
+export default USFlag;
